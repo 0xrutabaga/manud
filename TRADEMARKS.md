@@ -1,4 +1,3 @@
-<!-- DRAFT PROPOSAL for owner review. Not legal advice; have it reviewed before publication. No trademark has been registered or cleared for MANUD. -->
 # MANUD name and brand policy
 
 The MANUD code and Skill are open source under the [MIT License](LICENSE). **The MIT License does not grant rights to the MANUD brand.** This page explains what you can and cannot do with the brand.

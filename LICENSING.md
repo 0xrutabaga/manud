@@ -1,4 +1,3 @@
-<!-- DRAFT PROPOSAL for owner review (release candidate). Not legal advice. -->
 # What license covers what
 
 MANUD has two kinds of material, under different terms.

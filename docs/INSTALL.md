@@ -18,9 +18,9 @@ npx skills add 0xrutabaga/manud
 | Codex | `.agents/skills/manud` | `~/.agents/skills/manud` |
 | Google Antigravity | `.agents/skills/manud` | `~/.agents/skills/manud` (see below) |
 
-Paths are what Skills CLI 1.7.0 produced in testing; other CLI versions may differ.
+Paths are what Skills CLI 1.7.0 and 1.7.4 produced in testing; other CLI versions may differ.
 
-**Update:** run the same `npx skills add 0xrutabaga/manud …` command again; it overwrites the installed copy. (`npx skills update manud` is meant to do the same, but it hasn't been tested yet.)
+**Update:** `npx skills update manud` (add `-g` for a global install), or run the same `npx skills add 0xrutabaga/manud …` command again.
 **Remove:** `npx skills remove manud` (add `-g` for a global install).
 
 ### Antigravity
@@ -68,9 +68,7 @@ python <skills-folder>/manud/scripts/validate_skill.py <skills-folder>/manud
 
 ## What was tested before release (2026-10-20)
 
-Skills CLI 1.7.0 on Windows 11, installing from a local copy of this repository (including a git-clone source with `core.autocrlf=true`):
-
-- project and global install, reinstall (update) and removal: OK; all 40 Skill files byte-identical after install;
-- an existing `thai-humanizer` folder was not touched by install or removal;
-- after install, Claude Code 2.1.302 and Codex CLI 0.161.0 both listed `manud`. In earlier runs, Claude Code used it for a plain Thai request, and Codex used it when named (`$manud`);
-- **not yet tested:** installing from GitHub (`0xrutabaga/manud`), `npx skills update`, Linux and macOS (covered by the repository's CI tests once it's public), and Antigravity.
+- `npx skills add 0xrutabaga/manud` from the public GitHub repository, without any GitHub login, with Skills CLI 1.7.0 and 1.7.4 on Windows 11: listing, project and global install, `update` and `remove` all worked. All 40 Skill files were byte-identical after install, and an existing `thai-humanizer` folder wasn't touched.
+- The repository's install tests pass in CI on Linux, macOS and Windows.
+- After install, Claude Code 2.1.302 and Codex CLI 0.161.0 both listed `manud`. Claude Code used it for a plain Thai request; Codex used it when named (`$manud`).
+- **Not tested:** Google Antigravity and Gemini CLI.

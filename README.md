@@ -1,4 +1,3 @@
-<!-- RELEASE CANDIDATE draft for owner review — not published. -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/brand/mascot-v1.0/svg/manud-mascot-dark.svg">
@@ -34,8 +33,6 @@ npx skills add 0xrutabaga/manud
 ```
 
 This uses the open-source [Skills CLI](https://github.com/vercel-labs/skills) (needs Node.js 22.20 or newer). It normally lets you choose which agents to install for; add `-g` to install for your user instead of the current project. It installs the whole `manud` Skill folder (instructions, references, scripts), and you don't need to clone anything.
-
-> **Pre-release note:** the command above has been tested from a local copy of this repository, not yet from GitHub. It will be re-checked when the repository is public.
 
 | Agent | Project install | Global install (`-g`) | Checked before release |
 | :-- | :-- | :-- | :-- |

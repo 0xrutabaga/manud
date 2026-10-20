@@ -35,7 +35,6 @@ Don't edit anything in `assets/brand/`. Those files are frozen and hash-checked.
 ## License of contributions
 
 By contributing, you agree that your contribution is licensed under the [MIT License](LICENSE) of this repository (inbound = outbound). Only submit work you have the right to license this way.
-*(Owner decision D6: whether to also require a Developer Certificate of Origin sign-off.)*
 
 ## Conduct
 

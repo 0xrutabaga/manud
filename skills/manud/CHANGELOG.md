@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.1.0] — unreleased (proposed)
+## [3.1.0] — 2026-10-20
 
 Rename release. **The editing instructions are unchanged from V3.0.0.**
 
