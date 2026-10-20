@@ -1,0 +1,35 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Skill checks
+        working-directory: skills/manud
+        run: |
+          python scripts/validate_skill.py .
+          python -m unittest discover -s tests
+      - name: Packaging and Skills CLI install tests
+        run: python -m unittest discover -s tests -v
+      - name: Mascot hashes (POSIX)
+        if: runner.os != 'Windows'
+        working-directory: assets/brand/mascot-v1.0
+        run: sha256sum -c SHA256SUMS 2>/dev/null || shasum -a 256 -c SHA256SUMS

@@ -1,0 +1,10 @@
+# Line endings. Git for Windows ships core.autocrlf=true, which would rewrite
+# line endings on commit/checkout and break the SHA-256 manifests.
+
+# Default: normal text handling for everything else.
+* text=auto
+
+# Frozen, hash-checked trees: store and check out the exact bytes.
+# (mascot SVGs are CRLF; every other file in these trees is LF)
+assets/brand/mascot-v1.0/** -text
+skills/manud/** -text

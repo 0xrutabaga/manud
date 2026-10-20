@@ -1,0 +1,5 @@
+# Protected terms for independent synthetic TeamFlow test
+TeamFlow
+ไลน์
+30
+teamflow.app

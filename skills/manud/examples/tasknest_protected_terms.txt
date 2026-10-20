@@ -1,0 +1,9 @@
+# Canonical protected terms for TaskNest regression test
+TaskNest
+AI
+action items
+149
+7
+12
+2569
+30

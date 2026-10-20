@@ -1,0 +1,7 @@
+# Protected terms for Slow Morning Cafe regression test
+Slow Morning Cafe
+อารีย์
+กรุงเทพฯ
+Matcha latte
+Americano
+Wi-Fi
